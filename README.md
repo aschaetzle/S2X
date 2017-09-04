@@ -24,10 +24,13 @@ Unless explicitly stated otherwise all files in this repository are licensed und
 
 ## For Users:
 
+```
 spark-submit --class de.tf.uni.freiburg.sparkrdf.run.QueryExecutor --master spark://MasterAdress SparqlForSpark-1.0-with-dependencies.jar -i <GRAPH_PATH> -mem <WORKER_MEMORY> -q <QUERY_FILE_PATH_1, QUERY_FILE_PATH_2, ...> -jn <JOB_NAME>
+```
 
 Command Line Parameters:
 
+```
 -h
 	Display help message
 -i
@@ -58,6 +61,7 @@ Command Line Parameters:
 	Load the graph without hashing. Assign the node ids with count based method instead
 -vp
 	Set this flag if you are planning to use queries where the predicate could be a variable field. Must be set while the first loading of a graph.
+```
 
 See also the Spark Submit page:
 https://spark.apache.org/docs/latest/submitting-applications.html
