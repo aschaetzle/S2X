@@ -42,7 +42,7 @@ public class QueryExecutor {
      * @param args
      */
     public static void main(String[] args) {
-	ArgumentParser.parseInput(args);
+	de.tf.uni.freiburg.sparkrdf.run.ArgumentParser.parseInput(args);
 
 	Logger log = Logger.getLogger(QueryExecutor.class);
 	Map<String, Long> operationDuration = new TreeMap<>();
