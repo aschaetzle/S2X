@@ -17,7 +17,7 @@ import org.apache.spark.rdd.RDD
  * @author Thorsten Berberich
  *
  */
-object GraphLoader extends Logging {
+object GraphLoader {
   /**
    * The original graph that was loaded
    */
@@ -204,7 +204,7 @@ object GraphLoader extends Logging {
 
     if (hashedCount.compareTo(distHashedCount) != 0) {
       // Collisions existing
-      this.logError("Collisions occured while hashing. The graph can not be loaded with hashing. Use the option -countBased to load the graph without hashing.")
+      println("Collisions occured while hashing. The graph can not be loaded with hashing. Use the option -countBased to load the graph without hashing.")
     }
   }
 
